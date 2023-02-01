@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.white{
+    background: white;
+}
+.dright-red{
+    background: #DA2A47;
+}
+.red{
+    background: #EF5361;
+}
+.dright-yellow{
+    background: #F2A846;
+}
+.yellow{
+    background: #FABA59;
+}
+.dright-green{
+    background: #65B54E;
+}
+.green{
+    background: #78C161;
+}
+h4{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:20px 20px 0px 0px;
+    padding: 6px;
+    text-align: center;
+}
+p{
+    margin: 10px;
+    text-align: justify;
+}
+body{
+    background-image: url('../img/wide-selective-closeup-shot-illuminated-light-bulbs-hanging-from-ceiling.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;    
+    overflow: hidden;
+
+}
+a{
+    text-decoration: none;
+}
+header{
+    background: white;
+    display: flex;
+    align-items: center;
+}
+header .box{
+    margin-left: 20px;
+    border-radius: 5px ;
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 30px;
+    background: #B1D5CF;
+    transition: .5s;
+}
+header .box:hover{
+    border-radius: 50px ;
+    color: white;
+    background: #95b3ae;
+    box-shadow: 0px 0px 10px black;
+}
+.content{
+    display: flex;
+    background: rgb(255, 255, 255,30%);
+}
+.caja-semaforo{
+    width: 92%;
+    height: 100%;
+    /* background: rgb(209, 93, 93); */
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.caja-semaforo .box{
+    width: 60%;
+    height: 80%;
+    /* background: red; */
+    display: flex;
+}
+.caja-semaforo .box>div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.box-traffic-light{
+    width: 50%;
+    min-width: 225px;
+    height: 85%;
+    background: #3D4C70;
+    border-radius: 25px;
+    box-shadow: 7px 7px 0px 7px #364365;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.box-traffic-light .circle{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid #2F3A5A;
+    overflow: hidden;
+}
+.box-traffic-light .circle .circle-inside{
+    width: 93%;
+    height: 93%;
+    padding: 0px 0px 0px 0px;
+    border-radius: 50%;
+}
+
+.caja-semaforo .tube{
+    position: absolute;
+    bottom: 0px;
+    width: 80px;
+    height: 6%;
+    background: #3D4C70;
+}
+
+.info{
+    flex-direction: column;
+}
+.info .box-info{
+    width: 80%;
+    height: 30%;
+    border-radius: 20px 20px 0px 0px;
+}
+/*--------------------------------- index ---------------------------------*/
+.caja-index{
+    width: 8%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0) 0%,black 50%,rgba(0, 0, 0, 0) 100%);
+    transition: .6s;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.login{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.box-img{
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-img img{
+    width: 80px;
+    height: 80px;
+    transition: .5s;
+}
+.box-form{
+    width: 100%;
+    height: 0%;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.caja-index:hover{
+    width: 30%;
+}
+.caja-index:hover .box-img{
+    height: 50%;
+}
+.caja-index:hover .box-img img{
+    width: 240px;
+    height: 240px;
+}
+.caja-index:hover .box-form{
+    height: 50%;
+    padding: 20px;
+}
+.login input{
+    opacity: 0;
+    transition: 0.1s;
+    width: 100%;
+    margin: 10px auto;
+    padding: 5px 0px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: 0px;
+    text-align: center;
+    background: linear-gradient(white,rgb(196, 196, 196));
+}
+.login button{
+    opacity: 0;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 0px;
+    padding: 10px 0px;
+    background: #85EFF5;
+    cursor: pointer;
+}
+
+input:focus{
+        outline: 0;
+}
+.bar{
+    width: 80%;
+    height: 10px;
+}
+
+.caja-index:hover input{
+    position: relative;
+    transition: 2s;
+    opacity: 1;
+}
+.caja-index:hover button{
+    transition: 2s;
+    opacity: 1;
+}
