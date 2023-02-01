@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #205295;
+}
+header{
+    width: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+}
+header .box-head{
+    margin-left: 20px;
+    border-radius: 5px ;
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 30px;
+    background: #B1D5CF;
+    transition: .5s;
+}
+header .box-head:hover{
+    border-radius: 50px ;
+    color: white;
+    background: #95b3ae;
+    box-shadow: 0px 0px 10px black;
+}
+.content{
+    width: 100%;
+    display: flex;
+}
+.content .traffic_light_box{
+    /* background: red; */
+    width: 100%;
+    height: 100%;
+}
+.content .login_box{
+    background: linear-gradient(rgba(0, 0, 0, 0) 0%,black 50%,rgba(0, 0, 0, 0) 100%);
+    width: 10%;
+    height: 100%;
+    transition: .5s;
+    overflow: hidden;
+}
+.content .login_box:hover{
+    width: 20%;
+}
+.content .login_box:hover>div{
+    height: 50%;
+}
+.content .login_box .box_img{
+    width: 100%;
+    height: 100%;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+.content .login_box .box_img img{
+    width: 120px;
+    height: 120px;
+    transition: .5s;
+}
+.content .login_box:hover .box_img img{
+    width: 200px;
+    height: 200px;
+}
+.content .login_box .box_form{
+    width: 100%;
+    height: 0%;
+}
+
+.content .login_box .box_form form{
+    margin: 15px;
+    height: 100%;
+    border-radius: 15px;
+    padding: 10px;
+    /* background: rgb(71, 71, 71); */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+}
+.content .login_box:hover .box_form form{
+    opacity: 1;
+}
+.content .login_box .box_form form>input,button{
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    border: 0px;
+    padding: 5px;
+    font-size: 18px;
+    margin: 30px 0px;
+    text-align: center;
+    width: 0%;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.content .login_box .box_form form button{
+    /* width: 122%; */
+    width: 0%;
+    border-radius: 0px;
+    border: 0px;
+    cursor: pointer;
+    font-size: 0px;
+    color: white;
+    background: #292929;
+    padding: 15px;
+    box-shadow: 0px 0px 10px #292929;
+    transition: .1s;
+}
+.content .login_box .box_form form button:hover{
+    background: #1f1f1f;
+    padding: 15px;
+
+}
+.content .login_box:hover .box_form form button{
+    opacity: 1;
+    position: relative;
+    transition: 1s;
+    font-size: 30px;
+    width: 120%;
+}
+.content .login_box:hover .box_form form>input{
+    opacity: 1;
+    position: relative;
+    transition: 1.2s;
+    width: 100%;
+}
+.content .login_box .box_form form>input:focus{
+    box-shadow: 0px 0px 8px 5px #A1D3D1;
+    transition: 0s;
+
+}
