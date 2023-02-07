@@ -19,3 +19,6 @@ Route::get('/', function () {
 Route::get('Propuesta_1', function () {
     return view('Propuestas/Propuesta1');
 });
+Route::get('Layoud', function () {
+    return view('system/index');
+});

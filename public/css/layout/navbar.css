@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #104E86;
+}
+
+header .circle-img {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    right: 0px;
+}
+
+header .circle-img i,a {
+    text-decoration: none;
+    margin: 7.5px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+
+header .circle-img a img{
+    height: 100%;
+}
+header .circle-img a i{
+    display: block;
+    rotate: 90deg;
+    color: white;
+    margin: 0px 5px;
+    font-size: 10px;
+}
