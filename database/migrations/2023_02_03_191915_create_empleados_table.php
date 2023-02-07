@@ -25,10 +25,10 @@ class CreateEmpleadosTable extends Migration
             $table->string('telefonos_emp',255);
             $table->string('departamento_emp',255);
             $table->string('foto_emp',255);
-            $table->integer('id_empresa')->unsigned();
-            $table->foreign('id_empresa')->reference('id_empresa')->on('empresas');
             $table->integer('id_usuario')->unsigned();
-            $table->foreign('id_usuario')->reference('id_usuario')->on('usuarios');
+            $table->foreign('id_usuario')->references('id_usuario')->on('usuarios');
+            $table->integer('id_empresa')->unsigned();
+            $table->foreign('id_empresa')->references('id_empresa')->on('empresas');
             $table->timestamps();
             $table->softDeletes();
         });
