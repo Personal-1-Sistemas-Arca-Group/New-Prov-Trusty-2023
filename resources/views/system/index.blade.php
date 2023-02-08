@@ -1,3 +1,3 @@
-@extends('layout/nabvar')
+@extends('layout/template')
 @section('nabvar')
 @endsection

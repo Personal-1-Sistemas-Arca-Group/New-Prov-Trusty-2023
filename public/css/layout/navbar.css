@@ -3,33 +3,88 @@
     margin: 0;
 }
 
+body {
+    background: #D9D9D9;
+}
+
 header {
     background-color: #104E86;
 }
 
-header .circle-img {
+header .box {
     height: 100%;
     display: flex;
     justify-content: space-between;
     right: 0px;
 }
 
-header .circle-img i,a {
+
+
+header .box i,
+button {
     text-decoration: none;
-    margin: 7.5px 40px;
+    margin: 7.5px 2%;
     display: flex;
+    color: white;
+    background: none;
+    font-size: 30px;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
+    cursor: pointer;
+    border: none;
 }
 
-header .circle-img a img{
-    height: 100%;
+header .box button img {
+    height: 90%;
 }
-header .circle-img a i{
+
+header .box button i {
     display: block;
     rotate: 90deg;
-    color: white;
     margin: 0px 5px;
     font-size: 10px;
+}
+
+header .box .show-menu {
+    width: 100px;
+    position: absolute;
+    /* -> */
+    top: -30%;
+    right: 40px;
+    /* -> */
+    opacity: 0;
+}
+
+header .box .active {
+    position: absolute;
+    /* -> */
+    top: 10%;
+    right: 10px;
+    background: linear-gradient(#104E86 33%,#2e76b4 66%,#60aff3 100%);
+    /* -> */
+    opacity: 1;
+    border-radius: 0px 0px 6px 6px;
+    padding: 5px;
+}
+
+header .box .active .cont-menu {
+    height: 100%;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    background-color: white;
+}
+
+header .box .active .cont-menu>a {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    padding: 3px;
+}
+
+header .box .active .cont-menu>a:hover {
+    background-color: #E5ECF2;
 }
